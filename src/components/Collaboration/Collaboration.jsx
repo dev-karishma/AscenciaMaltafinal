@@ -1,6 +1,4 @@
 import React from "react";
-import "./collaboration.css";
-
 import erasmus from "../../assets/Images/erasmus.png";
 import chambermalata from "../../assets/Images/chambermalata.png"
 import get from "../../assets/Images/get.png"

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaPlay } from "react-icons/fa";
-import "./about.css"
+import "./About.css"
 function About() {
   return (
     <div>
