@@ -6,14 +6,14 @@ import { FaPlay } from "react-icons/fa";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
-import "./HERO.css";
+import "../Hero.css";
 
 function Hero() {
   return (
     <div className="hero-container">
       <Swiper
         modules={[Autoplay, EffectFade]}
-        effect="fade"                     // 🔥 slide movement band
+        effect="fade"                     
         fadeEffect={{ crossFade: true }}
         loop={true}
         autoplay={{
