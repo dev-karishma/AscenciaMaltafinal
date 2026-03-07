@@ -1,0 +1,127 @@
+
+/* ===== WRAPPER ===== */
+.contact-wrapper {
+  background:
+    radial-gradient(#e6e6e6 1px, transparent 1px),
+    #f5f5f5;
+  background-size: 18px 18px;
+  padding: 90px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== CONTAINER ===== */
+.contact-container {
+  max-width: 1150px;
+  margin: 20px auto;
+  padding: 0 20px 60px;
+}
+
+/* ===== TITLE ===== */
+.contact-container h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+/* ===== DESCRIPTION ===== */
+.desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+/* ===== FORM GRID ===== */
+.contact-form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  margin-bottom: 24px;
+}
+
+/* ===== INPUTS ===== */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px 22px;
+  border-radius: 30px;
+  border: 1px solid #e3e3e3;
+  font-size: 14px;
+  background: #ffffff;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+/* focus effect like original */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c41e3a;
+}
+
+/* textarea style */
+.contact-form textarea {
+  border-radius: 18px;
+  resize: none;
+  min-height: 160px;
+}
+
+/* ===== CHECKBOX ===== */
+.checkbox-row {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #666;
+  margin: 30px 0 35px;
+  align-items: flex-start;
+  max-width: 900px;
+}
+
+/* ===== BUTTON ===== */
+.submit-btn {
+  background: #0f140f;
+  color: #fff;
+  padding: 16px 48px;
+  border: none;
+  border-radius: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.submit-btn:hover {
+  background: #8b5e3c;
+  transform: translateY(-1px);
+}
+
+/* ===== MAP ===== */
+.map-container {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-form .row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .contact-container h1 {
+    font-size: 32px;
+  }
+
+  .contact-form textarea {
+    min-height: 140px;
+  }
+}

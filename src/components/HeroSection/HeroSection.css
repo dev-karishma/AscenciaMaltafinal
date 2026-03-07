@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  background: #f4f4f4;
+  padding: 80px 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dotted Background */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(#dcdcdc 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+/* Right Side Slant Shape */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 600px;
+  height: 100%;
+  background: #e9e9e9;
+  transform: skewX(-20deg);
+  z-index: 0;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+}
+
+/* Small Title */
+.small-title {
+  color: #d11a2a;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Main Heading */
+.hero-title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+  max-width: 900px;
+}
+
+.red-text {
+  color: #d11a2a;
+}
+
+/* Description */
+.hero-desc {
+  margin-top: 20px;
+  color: #444;
+  font-size: 16px;
+  max-width: 750px;
+  line-height: 1.7;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 100px;
+}
+
+/* Circle Image */
+.image-circle {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About Text */
+.about-small {
+  color: #d11a2a;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111;
+  max-width: 500px;
+}

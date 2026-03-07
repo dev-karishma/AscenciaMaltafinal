@@ -1,0 +1,190 @@
+/* /* .collaboration-section {
+  background: linear-gradient(90deg,#f3f3f3,#ffffff);
+  padding: 80px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.logo-box {
+  flex: 1;
+  text-align: center;
+}
+
+.logo-box img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Tablet */
+/* 
+@media (max-width: 992px) {
+
+.logo-row{
+flex-wrap: wrap;
+justify-content: center;
+gap: 50px;
+}
+
+.logo-box img{
+max-width:150px;
+}
+
+}
+
+/* Mobile */
+
+/* @media (max-width: 600px) {
+
+.title{
+text-align:center;
+font-size:24px;
+}
+
+.logo-row{
+flex-direction: column;
+gap:40px;
+}
+
+.logo-box img{
+max-width:140px;
+}
+
+}   */
+
+
+
+.collaboration-section {
+  background: linear-gradient(90deg,#f3f3f3,#ffffff);
+  padding: 80px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+/* LOGO ROW */
+
+.logo-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:80px;
+}
+
+/* LOGO BOX */
+
+.logo-box{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:120px;
+}
+
+/* IMAGE SIZE */
+
+.logo-box img{
+  max-width:200px;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+
+
+/* LOGO BOX */
+
+.logo-box{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:120px;
+  transition: all 0.3s ease;
+}
+
+/* IMAGE */
+
+.logo-box img{
+  max-width:200px;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.logo-box:hover img{
+  transform: scale(1.1);
+}
+
+.logo-box:hover{
+  transform: translateY(-5px);
+}
+
+@media (max-width:992px){
+
+.logo-row{
+flex-wrap:wrap;
+justify-content:center;
+gap:50px;
+}
+
+.logo-box{
+flex:0 0 40%;
+}
+
+.logo-box img{
+max-width:180px;
+}
+
+}
+
+@media (max-width:600px){
+
+.title{
+text-align:center;
+font-size:26px;
+}
+
+.logo-row{
+flex-direction:column;
+gap:40px;
+}
+
+.logo-box{
+height:100px;
+}
+
+.logo-box img{
+max-width:160px;
+}
+
+}

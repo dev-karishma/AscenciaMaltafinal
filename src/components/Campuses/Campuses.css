@@ -1,0 +1,38 @@
+ .campus-section {
+          background: #fff; padding: 80px 0; position: relative; overflow: hidden;
+        }
+        /* World map dot background */
+        .campus-section::before {
+          content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 50%;
+          background-image: radial-gradient(circle, rgba(200,200,200,0.55) 1.5px, transparent 1.5px);
+          background-size: 18px 18px; pointer-events: none;
+        }
+        .campus-inner { display: grid; grid-template-columns: 1fr 1.6fr; gap: 80px; align-items: start; max-width: 1280px; margin: 0 auto; padding: 0 60px; }
+        .campus-left h2 { font-size: clamp(24px, 3vw, 40px); font-weight: 900; margin-bottom: 10px; }
+        .campus-left h2 span { color: var(--red); }
+        .campus-left p { font-size: 14px; color: var(--text-muted); margin-bottom: 36px; line-height: 1.7; }
+        .campus-tabs { display: flex; flex-direction: column; gap: 4px; width: fit-content; }
+        .campus-tab {
+          padding: 14px 28px; font-size: 13px; font-weight: 800;
+          letter-spacing: 2px; text-transform: uppercase;
+          cursor: pointer; border: none; border-radius: 4px; transition: all 0.2s;
+          background: transparent; color: #888; text-align: left;
+        }
+        .campus-tab.active { background: var(--black); color: #fff; }
+        .campus-tab:hover:not(.active) { background: #f0f0f0; color: var(--black); }
+
+        /* Campus card */
+        .campus-card-display { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.1); }
+        .campus-card-img { width: 100%; height: 220px; object-fit: cover; display: block; background: #ddd; }
+        .campus-card-img-placeholder {
+          width: 100%; height: 220px;
+          background: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80') center/cover no-repeat;
+        }
+        .campus-card-body { padding: 28px 28px 24px; display: flex; align-items: flex-start; gap: 20px; }
+        .campus-card-info { flex: 1; }
+        .campus-card-title { font-size: 20px; font-weight: 900; color: var(--black); margin-bottom: 10px; }
+        .campus-card-desc { font-size: 14px; color: #666; line-height: 1.7; }
+
+        @media(max-width:960px){
+          .campus-inner { grid-template-columns:1fr; padding:0 20px; gap:40px; }
+        }

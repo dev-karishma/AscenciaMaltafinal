@@ -1,0 +1,249 @@
+.hero-container {
+  height: 100vh;
+}
+
+/* .slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+} */
+
+ .hero-container,
+.swiper,
+.swiper-slide {
+  height: 100vh;
+}
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* .slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;     /* vertical center */
+/* } */ 
+
+.hero-text {
+  margin-left: 10%;
+  color: white;
+  max-width: 650px;
+  margin-top: 70px;
+}
+.slide1 {
+  background-image: url("../../assets/Images/slider1.jpg");
+}
+
+.slide2 {
+  background-image: url("../../assets/Images/slider2.jpg");
+}
+
+.slide3 {
+  background-image: url("../../assets/Images/slider3.jpg");
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   /* background: rgba(224, 224, 224, 0.5); / */
+}
+/* 
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 600px;
+  z-index: 2;
+} */
+
+/* .hero-text p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 60px;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 800;
+  /* margin: 20px 0; */
+   /* margin-bottom: 60px; */
+/* } */ 
+
+.hero-text p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;   /* 🔽 normal gap */
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 25px;   /* 🔽 balanced space */
+}
+
+.discover-btn {
+  background: hsl(0, 0%, 7%);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;      /* image crop hoil pan full screen fill hoil */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.joinus-cta {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 40px;   /* 🔽 button thoda khali */
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+/* Hover Effect */
+.joinus-cta:hover {
+  transform: translateY(-5px);
+}
+
+/* Left Side Text */
+.joinus-cta-text {
+  background: rgba(0, 0, 0, 0.95);
+  color: white;
+  font-size: 16px;      /* 🔼 font size increase */
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 22px 55px;   /* 🔼 height + width increase */
+  transition: background 0.3s ease;
+}
+
+/* Right Side Icon */
+.joinus-cta-play {
+  background: #e10600;
+  color: white;
+  width: 95px;          /* 🔼 width increase */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+/* Dark Brown Hover */
+/* .joinus-cta:hover .joinus-cta-text {
+  background: #be2803;
+}
+
+.joinus-cta:hover .joinus-cta-play {
+  background: #2a1a12;
+} */
+
+
+.joinus-cta:hover .joinus-cta-text {
+  background-color: #be2803;  /* brown */
+}
+
+.joinus-cta:hover .joinus-cta-play {
+  background-color: #2a1a12;  /* dark brown */
+}
+
+
+
+/* responsive  */
+
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+  .hero-text {
+    margin-left: 5%;
+    margin-top: 0;
+    max-width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .slide {
+    justify-content: center;   /* center content */
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .hero-text p {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .joinus-cta {
+    margin-top: 30px;
+  }
+
+  .joinus-cta-text {
+    padding: 18px 30px;
+    font-size: 14px;
+  }
+
+  .joinus-cta-play {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .joinus-cta-text {
+    padding: 16px 22px;
+    font-size: 13px;
+  }
+
+  .joinus-cta-play {
+    width: 50px;
+  }
+}
