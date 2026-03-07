@@ -6,7 +6,7 @@ import { FaPlay } from "react-icons/fa";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
-import "../Hero.css";
+import "./Hero.css";
 
 function Hero() {
   return (
