@@ -93,7 +93,7 @@ const Partners = () => {
 
                         return (
                             <div className="circle" key={i}>
-                                <img src={Podar} alt="partner" />
+                                <img src={logo} alt="partner" />
                             </div>
                         );
 
